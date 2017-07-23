@@ -1,0 +1,28 @@
+[
+  {
+    "name": "default",
+    "driver": {
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "iwannarock",
+      "database": "bluebird"
+    },
+    "autoSchemaSync": true,
+    "entities": [
+      "www/entity/*.js"
+    ],
+    "subscribers": [
+      "www/subscriber/*.js,"
+    ],
+    "migrations": [
+      "www/migration/*.js"
+    ],
+    "cli": {
+      "entitiesDir": "www/entity",
+      "migrationsDir": "www/migration",
+      "subscribersDir": "www/subscriber"
+    }
+  }
+]

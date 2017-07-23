@@ -1,0 +1,32 @@
+{
+  "name": "bluebird-api",
+  "version": "0.0.1",
+  "description": "Example how to use Koa and TypeORM with TypeScript.",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Leandro Barral",
+    "email": "barral@ikecode.com.br"
+  },
+  "scripts": {
+    "start": "tsc && node www/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-router": "^7.0.21",
+    "@types/node": "^7.0.4",
+    "body-parser": "^1.17.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
+    "mysql": "^2.12.0",
+    "reflect-metadata": "^0.1.9",
+    "ts-simple-nameof": "0.0.1",
+    "typeorm": "0.0.9",
+    "typeorm-linq-repository": "0.0.3"
+  }
+}
