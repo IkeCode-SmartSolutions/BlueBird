@@ -14,14 +14,17 @@ createConnection().then(async connection => {
     const app = new Koa();
     const router = new Router();
 
+    const apiVersion = 1;
+    const apiUrlPrefix = `/api/v${apiVersion}`;
+
     // register all application routes
-    AppRoutes.forEach(route => router[route.method](route.path, route.action));
+    AppRoutes.forEach(route => router[route.method](`${apiUrlPrefix}${route.path}`, route.action));
 
     app.use(async (ctx, next) => {
         console.log('Headers');
         console.log('', ctx.headers);
 
-        if (ctx.method === "POST" || ctx.method === "PUT"){
+        if (ctx.method === "POST" || ctx.method === "PUT") {
             console.log('Body');
             console.log('', ctx.request.body);
         }
@@ -46,5 +49,6 @@ createConnection().then(async connection => {
     app.listen(3000);
 
     console.log("BlueBird API is up and running on port 3000");
+    console.log(`${apiUrlPrefix}`);
 
 }).catch(error => console.log("TypeORM connection error: ", error));

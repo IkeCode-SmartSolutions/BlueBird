@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Mensagens
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="show">
+   <ion-segment-button value="received">
+      Recebidas
+    </ion-segment-button>
+    <ion-segment-button value="sent">
+      Enviadas
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="show">
+    <ion-list *ngSwitchCase="'received'">
+      <ion-item>
+        <h2>Ruby</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'sent'">
+      <ion-item>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

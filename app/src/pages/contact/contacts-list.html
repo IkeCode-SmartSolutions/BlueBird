@@ -1,0 +1,9 @@
+<ion-list>
+    <ion-item text-wrap ion-item *ngFor="let contact of contacts">
+        <ion-avatar item-left>
+            <ion-icon name="person"></ion-icon>
+        </ion-avatar>
+        <h2>{{contact.name.formatted}}</h2>
+        <p>{{contact.phoneNumbers[0].value}}</p>
+    </ion-item>
+</ion-list>

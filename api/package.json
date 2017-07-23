@@ -8,6 +8,10 @@
     "name": "Leandro Barral",
     "email": "barral@ikecode.com.br"
   },
+  "repository": {
+    "url": "https://github.com/IkeCode-SmartSolutions/BlueBird.git",
+    "type": "git"
+  },
   "scripts": {
     "start": "tsc && node www/index.js"
   },
@@ -25,6 +29,7 @@
     "koa-router": "^7.0.1",
     "mysql": "^2.12.0",
     "reflect-metadata": "^0.1.9",
+    "swagger2": "0.0.24",
     "ts-simple-nameof": "0.0.1",
     "typeorm": "0.0.9",
     "typeorm-linq-repository": "0.0.3"

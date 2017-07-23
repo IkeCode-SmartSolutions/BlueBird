@@ -6,8 +6,7 @@ Descomplicando os assuntos delicados...
 ----------
 
 
-Comandos Úteis
--------------
+#### Comandos Úteis
 
 Alguns comando úteis para a hora do desenvolvimento, mais facil que escrever ou decorar
 
@@ -31,3 +30,4 @@ Links para documentação dos plugins utilizados
 > - https://github.com/typeorm/typeorm/
 > - https://typeorm.github.io/
 > - https://github.com/IRCraziestTaxi/typeorm-linq-repository
+> - http://koajs.com/

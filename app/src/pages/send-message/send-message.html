@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Enviar uma mensagem</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="show">
+   <ion-segment-button value="local">
+      Agenda
+    </ion-segment-button>
+    <ion-segment-button value="social">
+      Redes Sociais
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="show">
+    <page-contacts-list *ngSwitchCase="'local'"></page-contacts-list>
+    
+    <ion-list *ngSwitchCase="'social'">
+      <ion-item>
+        <h2>Contatos da API (Não Implementado)</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

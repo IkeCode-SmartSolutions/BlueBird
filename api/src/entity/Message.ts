@@ -24,8 +24,11 @@ export class Message extends BaseModel {
     @ManyToOne(type => User, t => t.sentMessages, { nullable: false })
     userFrom: Promise<User>;
 
-    @ManyToOne(type => User, t => t.receivedMessages, { nullable: false })
-    userTo: Promise<User>;
+    @ManyToOne(type => User, t => t.receivedMessages, { nullable: true })
+    userTo: Promise<User | null>;
+
+    @Column({ nullable: true })
+    smsPhoneNumberTo: string;
 
     @ManyToOne(type => Prefix, { nullable: false })
     @JoinColumn()

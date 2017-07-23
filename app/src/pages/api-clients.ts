@@ -1,0 +1,1 @@
+export { PrefixCategoryClient } from '../providers/api-client/prefix-category-client';
