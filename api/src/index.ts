@@ -21,13 +21,13 @@ createConnection().then(async connection => {
     AppRoutes.forEach(route => router[route.method](`${apiUrlPrefix}${route.path}`, route.action));
 
     app.use(async (ctx, next) => {
-        console.log('Headers');
-        console.log('', ctx.headers);
+        // console.log('Headers');
+        // console.log('', ctx.headers);
 
-        if (ctx.method === "POST" || ctx.method === "PUT") {
-            console.log('Body');
-            console.log('', ctx.request.body);
-        }
+        // if (ctx.method === "POST" || ctx.method === "PUT") {
+        //     console.log('Body');
+        //     console.log('', ctx.request.body);
+        // }
 
         const start: Date = new Date();
         await next();

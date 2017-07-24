@@ -15,6 +15,7 @@ Alguns comando úteis para a hora do desenvolvimento, mais facil que escrever ou
 > - ionic serve --lab --nobrowser -cs
 > - ionic cordova run android -l -cs
 > - ionic cordova emulate android -l -cs --target Nexus_5X_API_22
+> - ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="939470846191569" --variable APP_NAME="BlueBird"
 
 #### Design
 
